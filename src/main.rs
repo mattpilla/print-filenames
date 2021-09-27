@@ -11,7 +11,7 @@ fn main() {
     let pattern = matches.value_of("pattern").unwrap();
     let output = matches.value_of("output").unwrap();
     let (filelist, total) = get_filelist(pattern);
-    print_files(filelist, output).expect("something went wrong printing to file");
+    print_filenames(filelist, output).expect("something went wrong printing to file");
     println!("done ({} results)", total);
 }
 
@@ -31,7 +31,7 @@ fn get_filelist(pattern: &str) -> (String, u32) {
     (filelist, total)
 }
 
-fn print_files(filelist: String, out_path: &str) -> std::io::Result<()> {
+fn print_filenames(filelist: String, out_path: &str) -> std::io::Result<()> {
     fs::write(out_path, filelist)?;
     Ok(())
 }
