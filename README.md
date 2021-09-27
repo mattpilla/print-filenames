@@ -3,9 +3,8 @@
 
 ```
 $ print-filenames -h
-print-files 1.0
-keeta
-prints filenames of specified pattern to output file
+print-filenames
+print filenames matching glob pattern to textfile
 
 USAGE:
     print-filenames.exe <PATTERN> -o <FILE>

@@ -1,7 +1,5 @@
-name: print-files
-version: "1.0"
-author: keeta
-about: prints filenames of specified pattern to output file
+name: print-filenames
+about: print filenames matching glob pattern to textfile
 args:
     - pattern:
         help: 'Sets file pattern for input (use full windows path, ex: "D:\\user\\media\\**\\*.jpg")'
