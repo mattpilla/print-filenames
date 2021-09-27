@@ -1,0 +1,17 @@
+name: print-files
+version: "1.0"
+author: keeta
+about: prints filenames of specified pattern to output file
+args:
+    - pattern:
+        help: 'Sets file pattern for input (use full windows path, ex: "D:\\user\\media\\**\\*.jpg")'
+        takes_value: true
+        value_name: PATTERN
+        required: true
+        index: 1
+    - output:
+        short: o
+        help: Sets the output file to write to
+        takes_value: true
+        value_name: FILE
+        required: true
